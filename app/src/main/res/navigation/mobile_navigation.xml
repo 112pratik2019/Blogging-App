@@ -3,7 +3,25 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/mobile_navigation"
-        app:startDestination="@+id/nav_feed">
+        app:startDestination="@+id/registration_fragment">
+
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="com.scaler.microblogs.ui.registration.RegistrationFragment"
+        tools:layout="@layout/fragment_registration">
+        <action
+                android:id="@+id/action_registration_fragment_to_sign_in_fragment"
+                app:destination="@id/sign_in_fragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/sign_in_fragment"
+            android:name="com.scaler.microblogs.ui.signin.SignInFragment"
+            tools:layout="@layout/fragment_sign_in">
+        <action
+                android:id="@+id/action_sign_in_fragment_to_registration_fragment"
+                app:destination="@id/registration_fragment" />
+    </fragment>
 
     <fragment
             android:id="@+id/nav_feed"
@@ -22,4 +40,6 @@
             android:name="com.scaler.microblogs.ui.account.AccountFragment"
             android:label="@string/title_account"
             tools:layout="@layout/fragment_account" />
+
+
 </navigation>

@@ -3,4 +3,18 @@
     <string name="title_feed">Feed</string>
     <string name="title_tags">Tags</string>
     <string name="title_account">Account</string>
+
+    <!--Register Fragment-->
+    <string name="txt_register">Register</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_sign_up">SIGN UP</string>
+    <string name="txt_have_an_account">Have an account?</string>
+    <string name="txt_sign_in">SIGN IN</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_didnt_have_account">Didn\'t have account yet?</string>
+
+    <!--SignIn Fragment-->
+
 </resources>
